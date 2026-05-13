@@ -1,0 +1,41 @@
+.pio
+.vscode/.browse.c_cpp.db*
+.vscode/c_cpp_properties.json
+.vscode/launch.json
+.vscode/ipch
+# --- IDE / System Files ---
+.vscode/
+.pio/
+.build/
+.cache/
+*.swp
+*.log
+.DS_Store
+Thumbs.db
+
+# --- Compiled Binaries ---
+*.elf
+*.bin
+*.hex
+*.o
+*.a
+
+# --- Hardware / Library Files ---
+# We ignore the local lib folder because PlatformIO 
+# will re-download them based on platformio.ini
+lib/
+.pio/libdeps/
+
+# --- SECRETS (CRITICAL) ---
+# Create a file named secrets.h and put your credentials there
+secrets.h
+config.json
+*.pem
+*.key
+.env
+
+# --- Python / Data Analysis ---
+__pycache__/
+*.csv
+*.pyc
+.ipynb_checkpoints/
