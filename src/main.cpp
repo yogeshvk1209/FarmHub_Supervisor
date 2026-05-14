@@ -17,7 +17,7 @@ const float VOLTAGE_DIVIDER_RATIO = 5.48;
 const char* AWS_IOT_TOPIC = "farm/telemetry";
 // --- Sending interval
 unsigned long lastMillis = 0;
-const long interval = 300000; // 15 Min (900000 ms) ; 10 Min (600000 ms) ; 5 Min (300000 ms)
+const long interval = 600000; // 15 Min (900000 ms) ; 10 Min (600000 ms) ; 5 Min (300000 ms)
 // --- LFP Specific Thresholds ---
 const float LFP_CRITICAL = 12.5; 
 const float LFP_RECOVERY = 13.1; // "Full enough" to handle the Router's 4G startup spike
